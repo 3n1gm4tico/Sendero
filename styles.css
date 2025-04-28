@@ -49,11 +49,11 @@ body {
 /* ======= CONTENEDOR GENERAL ======= */
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 2rem;
   max-width: 1200px;
   margin: 2rem auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 /* ======= SECCIÓN PRINCIPAL DEL BLOG ======= */
@@ -94,7 +94,7 @@ body {
   padding: 1rem;
   border-radius: 0.75rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  max-height: fit-content;
+  height: fit-content;
 }
 
 .sidebar h3 {
@@ -122,7 +122,17 @@ body {
   color: #005fa3;
 }
 
-/* ======= MEDIA QUERIES PARA CELULARES ======= */
+/* ======= MEDIA QUERIES PARA RESPONSIVE ======= */
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    margin-top: 2rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .main-header {
     flex-direction: column;
@@ -142,11 +152,7 @@ body {
   }
 
   .container {
-    flex-direction: column;
     padding: 0 1rem;
   }
-
-  .sidebar {
-    margin-top: 2rem;
-  }
 }
+
