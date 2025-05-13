@@ -93,6 +93,7 @@ body {
   .texto-bienvenida p {
     font-size: 1.4rem;
     margin-top: 10px;
+    text-align: justify
   }
   
   /* ============================ */
