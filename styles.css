@@ -297,9 +297,28 @@ body {
   a{text-decoration: none;
     color: #00433d;
   }
+
+ .btn-articulo2 {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00433d;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .btn-especialidades:hover {
+    background-color: white;
+    color: #00433d;
+  }
   
   
-  
+
   
   .blog-intro {
     background-color: white;
