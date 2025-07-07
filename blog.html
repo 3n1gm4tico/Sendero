@@ -2,112 +2,106 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Blog</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- Header con menú hamburguesa -->
   <header class="main-header">
     <div class="logo">
       <a href="index.html">
         <img src="./imagenes/logo.png" alt="Mi Logo" />
       </a>
     </div>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
     <nav class="nav-menu">
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="especialidades.html">Especialidades</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="reservas.html" class="active">Reservas</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+    <!-- Introducción -->
     <section class="especialidades-caja">
-      <section class="blog-intro">
-        <div class="container">
-          <h1>Bienvenido al Blog de Sendero</h1>
-          <p>
-            Explora el fascinante mundo del café 100 % colombiano con nosotros. En este espacio, descubrirás historias,
-            tendencias y secretos detrás de cada grano. Desde la tradición cafetera hasta las innovaciones en la industria,
-            cada artículo está pensado para acercarte más a la esencia de una buena taza.
-          </p>
-          <br />
-          <p>
-            Sumérgete en nuestras publicaciones y déjate llevar por el aroma, la cultura y la pasión que hacen del café
-            una experiencia única. ¡Bienvenido a Sendero!
-          </p>
-        </div>
-      </section>
+      <div class="container">
+        <h1>Bienvenido al Blog de Sendero</h1>
+        <p>Explora el fascinante mundo del café 100 % colombiano con nosotros. En este espacio, descubrirás historias, tendencias y secretos detrás de cada grano.</p>
+        <p>Sumérgete en nuestras publicaciones y déjate llevar por el aroma, la cultura y la pasión que hacen del café una experiencia única. ¡Bienvenido a Sendero!</p>
+      </div>
     </section>
 
+    <!-- Noticias destacadas -->
     <section class="blog-section">
       <div class="container-blog">
-        <section class="especialidades-caja">
-        <section class="blog-intro">
-          <div class="container"></div>
-        <h1>Noticias Destacadas</h1></section></section>
+        <h2>Noticias Destacadas</h2>
 
+        <!-- Artículo 1 -->
         <div class="caja-grande">
           <div class="contenido-izquierda">
-            <a href="articulo1.html">
-            <h2><div class="clah2">El Café 100 % Colombiano en Medellín</h2></a>
-            <p><div class="clap">Descubre cómo Medellín se ha convertido en un destino clave para los amantes del café.</div></p>
+            <a href="articulo1.html"><h3>El Café 100 % Colombiano en Medellín</h3></a>
+            <p>Descubre cómo Medellín se ha convertido en un destino clave para los amantes del café.</p>
           </div>
           <div class="blog-image">
             <img src="./imagenes/imgarticulo1.png" alt="El Café 100 % Colombiano en Medellín" class="imagen-caja" />
           </div>
         </div>
 
+        <!-- Artículo 2 -->
         <div class="caja-grande">
           <div class="contenido-izquierda">
-            <a href="articulo2.html">
-            <h2><div class="clah2">Brunch en Medellín: Café, Naturaleza y una Experiencia Inolvidable</h2></a>
-            <p><div class="clap">Conoce la historia y el impacto cultural del café en la identidad colombiana.</div></p>
+            <a href="articulo2.html"><h3>Brunch en Medellín: Café, Naturaleza y una Experiencia Inolvidable</h3></a>
+            <p>Conoce la historia y el impacto cultural del café en la identidad colombiana.</p>
           </div>
           <div class="blog-image">
             <img src="./imagenes/imgarticulo2.png" alt="Brunch en Medellín" class="imagen-caja" />
           </div>
         </div>
 
+        <!-- Artículo 3 -->
         <div class="caja-grande">
           <div class="contenido-izquierda">
-            <a href="articulo3.html">
-            <h2><div class="clah2">El Arte de Cultivar y Producir Café</h2></a>
-            <p><div class="clap">Un Viaje desde el Campo hasta el Tazón.</div></p>
+            <a href="articulo3.html"><h3>El Arte de Cultivar y Producir Café</h3></a>
+            <p>Un viaje desde el campo hasta el tazón.</p>
           </div>
           <div class="blog-image">
             <img src="./imagenes/2imgarticulo3.png" alt="Cultivar café" class="imagen-caja" />
           </div>
         </div>
 
+        <!-- Artículo 4 -->
         <div class="caja-grande">
           <div class="contenido-izquierda">
-            <a href="articulo4.html">
-            <h2><div class="clah2">El Sabor del Café</h2></a>
-            <p><div class="clap">Una Experiencia Sensorial Única.</div></p>
+            <a href="articulo4.html"><h3>El Sabor del Café</h3></a>
+            <p>Una experiencia sensorial única.</p>
           </div>
           <div class="blog-image">
-            <img src="./imagenes/1imgarticulo4.jpg" alt="Sabor del café" class="imagen-caja"/>
+            <img src="./imagenes/1imgarticulo4.jpg" alt="Sabor del café" class="imagen-caja" />
           </div>
         </div>
 
+        <!-- Artículo 5 -->
         <div class="caja-grande">
           <div class="contenido-izquierda">
-            <a href="articulo5.html">
-            <h2><div class="clah2">Un Universo de Sabores</h2></a>
-            <p><div class="clap">Explorando los Tipos de Café y sus Preparaciones.</div></p>
+            <a href="articulo5.html"><h3>Un Universo de Sabores</h3></a>
+            <p>Explorando los tipos de café y sus preparaciones.</p>
           </div>
           <div class="blog-image">
-            <img src="./imagenes/2imgarticulo5.jpg" alt="Universo de Sabores" class="imagen-caja"/>
+            <img src="./imagenes/2imgarticulo5.jpg" alt="Universo de Sabores" class="imagen-caja" />
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="main-footer">
     <div class="footer-content">
       <p>&copy; 2025 Sendero. Todos los derechos reservados.</p>
@@ -119,11 +113,13 @@
         </ul>
       </nav>
       <div class="social-media">
-            <a href="https://www.facebook.com/profile.php?id=61575285921325&rdid=snl9eyiVSAOJ2Ab5&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1A31pHE3id%2F#" target="_blank">Facebook</a> | 
-        <a href="https://www.instagram.com/sendero__coffee/" target="_blank">Instagram</a> |
-        <a href="https://www.youtube.com/@SENDERO_COFFEE?app=desktop&sfnsn=scwspwa" target="_blank">YouTube</a>
+        <a href="https://www.facebook.com/profile.php?id=61575285921325" target="_blank">Facebook</a> | 
+        <a href="https://www.instagram.com/sendero__coffee/" target="_blank">Instagram</a> | 
+        <a href="https://www.youtube.com/@SENDERO_COFFEE" target="_blank">YouTube</a>
       </div>
     </div>
   </footer>
+
 </body>
 </html>
+
