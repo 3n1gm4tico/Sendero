@@ -541,3 +541,59 @@ button:hover {
     margin-top: 20px;
 }
   
+
+
+
+
+/* Ocultar checkbox y hamburguesa por defecto */
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #333;
+  padding: 10px;
+}
+
+/* Estilo general del menú */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Responsive: versión hamburguesa */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: none;
+    padding: 15px;
+    z-index: 10;
+  }
+
+  #menu-toggle:checked + .hamburger + .nav-menu ul {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: relative;
+  }
+}
